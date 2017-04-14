@@ -1,0 +1,163 @@
+
+.faq-list{
+	padding: 0;
+	margin: 46px 0 40px;
+	list-style: none;
+
+	.ansver-block{
+		margin: 37px 0 48px;
+	}
+}
+
+.faq-list__item{
+	position: relative;
+	padding: 0 0 12px 34px;
+	margin: 16px 0;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 2px;
+		width: 20px;
+		height: 20px;
+		background: url(../img/sprite.png) -77px 0 no-repeat;
+	}
+
+	&:before{
+		content: '';
+		position: absolute;
+		left: 34px;
+		right: 0;
+		bottom: 0;
+		height: 1px;
+		background: #ececec;
+	}
+
+	&.open{
+		&:before{
+			display: none;
+		}
+
+		.faq-list__title{
+			color: #915584;
+
+			&:after{
+				display: none;
+			}
+		}
+
+		.faq-list__desc{
+			display: block;
+		}
+	}
+}
+
+.faq-list__title{
+	position: relative;
+	font: 17px/1.4 $elp_reg;
+	color: #333333;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	cursor: pointer;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 1px;
+		border-bottom: 2px dotted #333333;
+	}
+
+	&:hover:after{
+		border: none;
+		padding-bottom: 2px;
+	}
+}
+
+.faq-list__info{
+	font: 15px/1.4 $elp_reg;
+	color: #999999;
+	margin: 8px 0;
+}
+
+.faq-list__desc{
+	display: none;
+	padding: 0 0 1px;
+}
+
+.faq-list__question{
+	font: 15px/1.6 $elp_reg;
+	color: #333333;
+}
+
+.faq-list__question-p{
+	margin: 0 0 10px;
+}
+
+.faq-list__ansver-block{
+	border: 2px solid #985984;
+	padding: 25px 18px 25px;
+}
+
+.ansver-block{
+	position: relative;
+	border: 2px solid #985984;
+	padding: 25px 18px 18px;
+	border-radius: 2px;
+	background: #fff;
+
+	.userpic-block{
+		float: left;
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 53px;
+		top: -17px;
+		width: 36px;
+		height: 17px;
+		background: url(../img/sprite.png) -114px 0 no-repeat;
+	}
+}
+
+.ansver-block__desc{
+	margin: 0 0 0 120px;
+	padding: 20px 0;
+	color: #282828;
+}
+
+.ansver-block__name{
+	font: 19px/1.4 $elp_reg;
+	margin: 0;
+	padding: 0;
+}
+
+.ansver-block__appointment{
+	font: 13px/1.4 $elp_reg;
+	margin: 0;
+	padding: 0;
+}
+
+.ansver-block__comment{
+	font: 15px/1.7 $elp_reg;
+	margin: 20px 0 0;
+	padding: 0;
+}
+
+.ansver-block__comment-p{
+	margin: 20px 0 0;
+}
+
+
+
+
+

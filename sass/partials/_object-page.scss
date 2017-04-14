@@ -1,0 +1,51 @@
+/* Object Page
+-----------------------------------------------------------------------------*/
+
+.object-section {
+	color: #333333;
+	font: 15px/28px $elp_reg;
+	padding: 14px 0 0;
+	margin: 0 0 77px;
+}
+
+.object-descr {
+	padding: 0 0 0 708px;
+}
+
+.object-descr__p {
+	margin: 0 0 10px;
+}
+
+.object-price {
+	margin: 0 0 26px;
+}
+
+.object-price__p {
+	margin: 0 0 1px;
+	line-height: 1.2;
+}
+
+.object-price__val {
+	margin: 0;
+	font: 31px/1.2 $elp_bold;
+}
+
+.object-address {
+	margin: 0 0 41px;
+	font: 17px/1.2 $elp_reg;
+}
+
+.object-descr__link {
+	text-decoration: underline;
+	color: #333333;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.object-address__link {
+	display: inline-block;
+	margin: 14px 0 0;
+	font-size: 15px;
+}

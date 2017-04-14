@@ -1,0 +1,70 @@
+/* Forms
+-----------------------------------------------------------------------------*/
+
+.basic-formline{
+	margin: 22px 0;
+}
+
+.basic-two-col{
+	width: 48.5%;
+	margin: 0 0 0 3%;
+	float: left;
+
+	&:first-child{
+		margin: 0;
+	}
+}
+
+.basic-input{
+	font: 17px/1.4 $elp_reg;
+	padding: 11px 10px 12px;
+	width: 100%;
+	border-radius: 2px;
+	background: #f8f8f8;
+	box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+	border: 0;
+	outline: none;
+	color: #333333;
+	@include box-sizing(border-box);
+}
+
+.basic-textarea{
+	font: 17px/1.4 $elp_reg;
+	padding: 11px 10px 12px;
+	width: 100%;
+	max-width: 100%;
+	border-radius: 2px;
+	background: #f8f8f8;
+	box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+	border: 0;
+	outline: none;
+	color: #333333;
+	height: 116px;
+	@include box-sizing(border-box);
+}
+
+.basic-submit{
+	outline: none;
+	border: 0;
+	border-radius: 3px;
+	text-align: center;
+	padding: 8px 35px 5px;
+	font: 18px/1.4 $elp_reg;
+	color: #ffffff;
+	background: #965986;
+	box-shadow: 0 3px 0 0 #814471;
+
+	&:hover{
+		background: #a06891;
+	}
+
+	&:focus{
+		box-shadow: 0 3px 0 0 #a06891;
+	}
+}
+
+.feedback-form{
+	display: block;
+	width: 652px;
+	margin: 32px 0;
+}

@@ -1,0 +1,25 @@
+/* Side-menu
+-----------------------------------------------------------------------------*/
+
+.side-menu{
+	font: 18px/1.6 $elp_reg;
+	padding: 6px 28px 14px;
+	margin: 0;
+	list-style: none;
+	border: 2px solid #985984;
+	border-radius: 2px;
+}
+
+.side-menu__item{
+	margin: 22px 0 22px;
+}
+
+.side-menu__link{
+	color: #333333;
+
+	&.active{
+		color: #8d5284;
+		text-decoration: none;
+		font: 18px/1.6 $elp_bold;
+	}
+}

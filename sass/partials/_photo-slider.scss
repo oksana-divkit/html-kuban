@@ -1,0 +1,60 @@
+/* Photo Slider
+-----------------------------------------------------------------------------*/
+
+.object-photos {
+	position: relative;
+	margin: 3px 0 0;
+	width: 648px;
+	float: left;
+}
+
+.photo-slider {
+	margin: 0 0 24px;
+	height: 372px;
+	overflow: hidden;
+}
+
+.photo-slider__ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.photo-slider__slide {
+	height: 372px;
+	float: left;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.promo-slider__pic {
+	min-width: 100%;
+	display: block;
+}
+
+.photo-slider-preview {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.photo-slider-preview__li {
+	float: left;
+	position: relative;
+	margin: 0 0 5px 29px;
+	width: 140px;
+	height: 88px;
+	border-radius: 5px;
+	cursor: pointer;
+	overflow: hidden;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	img {
+		max-width: 100%;
+		min-width: 100%;
+		height: auto;
+	}
+}

@@ -1,0 +1,37 @@
+/* Buttons
+-----------------------------------------------------------------------------*/
+
+.btn-white {
+	display: inline-block;
+	padding: 6px 22px 7px;
+	border-radius: 3px;
+	border: 2px solid #fff;
+	border: 2px solid rgba(255, 255, 255, .71);
+	text-decoration: none;
+	color: #fff;
+	font: 14px/1 $elp_reg;
+
+	&:hover {
+		border: 2px solid #fff;
+	}
+}
+
+.btn-violet{
+	outline: none;
+	border: 0;
+	border-radius: 3px;
+	text-align: center;
+	padding: 8px 35px 5px;
+	font: 18px/1.4 $elp_reg;
+	color: #ffffff;
+	background: #965986;
+	box-shadow: 0 3px 0 0 #814471;
+
+	&:hover{
+		background: #a06891;
+	}
+
+	&:focus{
+		box-shadow: 0 3px 0 0 #a06891;
+	}
+}

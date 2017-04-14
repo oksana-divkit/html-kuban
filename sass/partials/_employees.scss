@@ -1,0 +1,95 @@
+/* Employees
+-----------------------------------------------------------------------------*/
+
+.employees-list {
+	list-style: none;
+	padding: 0;
+	margin: 34px 0 0 5px;
+}
+
+.employees-list__item {
+	display: inline-block;
+	vertical-align: top;
+	width: 24%;
+	padding: 9px 6.49% 0;
+	position: relative;
+	margin: 0 0 42px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -8px;
+		height: 205px;
+		width: 1px;
+		background: #ececec;
+	}
+
+	&:nth-child(3n + 1) {
+		padding-left: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	&:nth-child(3n) {
+		padding-right: 0;
+	}
+}
+
+.employees-list__photo {
+	border-radius: 50%;
+	height: 202px;
+	width: 202px;
+	overflow: hidden;
+	margin: 0 0 31px 3px;
+}
+
+.employees-list__name {
+	margin: 0 0 1px;
+	color: #282828;
+	font: 18px/1.2 $elp_reg;
+}
+
+.employees-list__appointment {
+	margin: 0 0 27px;
+	color: #282828;
+	font: 15px/1.2 $elp_reg;
+}
+
+.employees-list__contacts {
+	margin: 0 0 17px;
+	color: #282828;
+	font: 15px/1.2 $elp_reg;
+
+	&.phone {
+		padding: 0 0 0 30px;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 1px;
+			left: 0;
+			width: 15px;
+			height: 16px;
+			background: url(../img/sprite.png) no-repeat -173px -1px;
+		}
+	}
+
+	&.email {
+		padding: 0 0 0 30px;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 4px;
+			left: 0;
+			width: 17px;
+			height: 10px;
+			background: url(../img/sprite.png) no-repeat -190px -1px;
+		}
+	}
+}

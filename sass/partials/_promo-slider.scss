@@ -1,0 +1,131 @@
+/* Promo Slider
+-----------------------------------------------------------------------------*/
+
+.w-promo-slider {
+	position: relative;
+	margin: 80px -32px 98px 0;
+}
+
+.promo-slider {
+	margin: 0 0 -36px;
+	height: 428px;
+	overflow: hidden;
+}
+
+.promo-slider__ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.promo-slider__li {
+	position: relative;
+	height: 428px;
+	float: left;
+}
+
+.promo-slider__pic {
+	border-radius: 6px;
+	overflow: hidden;
+
+	img {
+		min-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.promo-slider__pager {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.promo-slider__pager-li {
+	display: inline-block;
+	position: relative;
+	margin: 0 4px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #fff;
+	border: 3px solid #965986;
+	cursor: pointer;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		right: 2px;
+		bottom: 2px;
+		border-radius: 50%;
+		background: #965986;
+		display: none;
+	}
+
+	&:hover:before,
+	&.active:before {
+		display: block;
+	}
+}
+
+.promo-slider__btn-prev {
+	position: absolute;
+	top: 157px;
+	left: -150px;
+	height: 58px;
+	width: 58px;
+	cursor: pointer;
+	background: url(../img/sprite.png) no-repeat left -35px;
+
+	&:hover {
+		background-position: left -96px;
+	}
+}
+
+.promo-slider__btn-next {
+	position: absolute;
+	top: 157px;
+	right: -130px;
+	height: 58px;
+	width: 58px;
+	cursor: pointer;
+	background: url(../img/sprite.png) no-repeat -60px -35px;
+
+	&:hover {
+		background-position: -60px -96px;
+	}
+}
+
+.promo-slider__card {
+	width: 445px;
+	padding: 32px 15px 25px 30px;
+	position: absolute;
+	bottom: 0;
+	right: 97px;
+	border-radius: 5px;
+	color: #ffffff;
+	background: #834d84 url(../img/promo_slider_card_bg.jpg);
+	background-size: cover;
+	font: 15px/1.4 $elp_reg;
+	@include box-sizing(border-box);
+}
+
+.promo-slider__title {
+	margin: 0 0 22px 2px;
+	padding: 0;
+	font: 26px/1.2 $elp_bold;
+	color: #ffffff;
+	letter-spacing: 0.01em;
+}
+
+.promo-slider__p {
+	margin: 0 0 16px 0;
+}
+
+.promo-slider__more {
+	float: right;
+	margin: 0 14px 0 0;
+}

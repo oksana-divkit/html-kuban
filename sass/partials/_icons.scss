@@ -1,0 +1,32 @@
+/* Icons
+-----------------------------------------------------------------------------*/
+
+.icon-ruble {
+	display: inline-block;
+	width: 19px;
+	height: 23px;
+	vertical-align: middle;
+	position: relative;
+	top: -3px;
+	background: url(../img/sprite.png) no-repeat -56px -1px;
+}
+
+.icon-mark {
+	display: inline-block;
+	width: 12px;
+	height: 16px;
+	margin: 2px 8px 0 0;
+	vertical-align: middle;
+	background: url(../img/sprite.png) no-repeat -100px -1px;
+}
+
+.icon-pdf{
+	position: relative;
+	top: -7px;
+	display: inline-block;
+	width: 22px;
+	height: 28px;
+	margin: 0 8px 0 0;
+	vertical-align: top;
+	background: url(../img/sprite.png) no-repeat -209px 0;
+}

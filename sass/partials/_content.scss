@@ -1,0 +1,223 @@
+/* Content
+-----------------------------------------------------------------------------*/
+
+.content {
+	padding: 86px 36px 134px 36px;
+	@include box-sizing(border-box);
+}
+
+.container {
+	width: 100%;
+	float: left;
+}
+
+.left-sidebar {
+	padding: 12px 0 0;
+	width: 230px;
+	float: left;
+	margin: 0 0 20px -100%;
+}
+
+.middle {
+	padding: 0 0 0 316px;
+	margin: 0 0 20px;
+}
+
+.content-bottom {
+	padding: 20px 36px 0;
+	clear: both;
+	@include box-sizing(border-box);
+}
+
+.block-title{
+	font-family: $elp_bold;
+	font-size: 38px;
+	line-height: 1.4;
+	color: #282828;
+	margin: 15px 0;
+}
+
+
+.article-head{
+	margin: 38px 0;
+}
+
+.article-head__pic{
+	border-radius: 50%;
+	float: left;
+	margin: 5px 0;
+}
+
+.article-head__desc{
+	margin: 0 0 0 176px;
+	font-family: $elp_bold;
+	font-size: 17px;
+	line-height: 1.4;
+	color: #282828;
+}
+
+.article-head__title{
+	font-family: $elp_bold;
+	font-size: 17px;
+	line-height: 1.44;
+	color: #282828;
+	margin: 10px 0 25px;
+}
+
+.article-head__p{
+	font-family: $elp_reg;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #282828;
+}
+
+.breadcrumbs {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0;
+	color: #999999;
+	font: 15px/1 $elp_reg;
+}
+
+.breadcrumbs__item {
+	display: inline;
+
+	&:before {
+		content: '/';
+		color: #333333;
+	}
+
+	&:first-child:before {
+		display: none;
+	}
+}
+
+.breadcrumbs__link {
+	color: #333333;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.block-subtitle {
+	margin: 38px 0 12px;
+	color: #333333;
+	font: 19px/1.2 $elp_bold;
+}
+
+.basic-table {
+	width: 100%;
+	color: #1b1b1b;
+	margin: 16px 0 0;
+	font: 14px/1.2 $elp_reg;
+
+	&.parameters {
+		width: 360px;
+	}
+}
+
+.basic-table__tr {
+
+	&:nth-child(2n+1) {
+		background: #f6f6f6;
+	}
+}
+
+.basic-table__td {
+	padding: 8px 10px;
+	vertical-align: top;
+
+	&.label {
+		color: #666666;
+		width: 125px;
+	}
+}
+
+.pager {
+	margin: 20px 0 44px;
+	padding: 22px 0;
+	color: #333333;
+	border-top: 1px solid #ececec;
+	@include clearfix;
+}
+
+.pager__btn {
+	color: #333333;
+	position: relative;
+	font: 18px/1.2 $elp_reg;
+	text-decoration: underline;
+	margin: 13px 0 0;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.prev {
+		float: left;
+		margin-left: 18px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: -14px;
+			width: 7px;
+			height: 12px;
+			background: url(../img/sprite.png) no-repeat -163px -1px;
+		}
+	}
+
+	&.next {
+		float: right;
+		margin-right: 18px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 3px;
+			right: -14px;
+			width: 7px;
+			height: 12px;
+			background: url(../img/sprite.png) no-repeat -154px -1px;
+		}
+	}
+}
+
+.pager-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font: 24px/1.2 $elp_reg;
+}
+
+.pager-list__item {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 14px;
+
+	&.active {
+		margin: 0;
+
+		.pager-list__link {
+			text-decoration: none;
+			color: #fff;
+			background: #985984;
+			border-radius: 3px;
+			padding: 8px 13px 4px;
+		}
+
+	}
+}
+
+.pager-list__link {
+	text-decoration: underline;
+	display: inline-block;
+	color: #333333;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

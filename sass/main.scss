@@ -1,0 +1,114 @@
+@import "bourbon/bourbon";
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/mixins";
+
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: $elp_reg;
+	height: 100%;
+	color: #4a626a;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::-webkit-input-placeholder {
+	color: #9D9E9E;
+}
+
+a {
+	color: #70476c;
+	@include transition (all linear .2s);
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {/* */
+	border: none;
+	padding: 0;
+}
+
+#{$all-text-inputs-focus},
+textarea:focus,
+select:focus {
+	/*border-color: rgba(82, 168, 236, 0.8) !important;*/
+	box-shadow: 0 0 5px 0 #a06891;
+	outline: 0;
+	outline: thin dotted \9;
+	@include transition(border-color linear 0.2s, box-shadow linear 0.2s);
+}
+
+.clearfix:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content: ".";
+	font-size: 0;
+}
+
+.clearfix { zoom: 1; }
+
+.ir {
+   font: 0/0 a;
+   text-shadow: none;
+   color: transparent;
+}
+
+.wrapper {
+	min-width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	overflow: hidden;
+}
+
+.wrap-center{
+	position: relative;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.wrap-out{
+	margin: 0 -9999px;
+	padding: 0 9999px;
+}
+
+
+@import "partials/fonts";
+@import "partials/icons";
+@import "partials/buttons";
+@import "partials/forms";
+
+@import "partials/header";
+@import "partials/content";
+@import "partials/footer";
+
+@import "partials/features-list";
+@import "partials/short-news";
+@import "partials/promo-slider";
+@import "partials/side-menu";
+@import "partials/faq";
+@import "partials/object-page";
+@import "partials/photo-slider";
+@import "partials/news";
+@import "partials/employees";
+@import "partials/article";
+
+@import "partials/media-query";

@@ -1,0 +1,56 @@
+/* Media Query
+-----------------------------------------------------------------------------*/
+
+@media all and (max-width: 1235px) {
+	.middle {
+		padding-left: 280px;
+	}
+
+	.promo-slider__pager {
+		margin-right: 550px;
+		text-align: right;
+	}
+	
+	.object-descr {
+		padding-left: 500px;
+	}
+
+	.object-photos,
+	.photo-slider__slide {
+		width: 450px;
+	}
+
+	.photo-slider-preview__li {
+		margin-left: 10px;
+		width: 105px;
+		height: 66px;
+	}
+
+	.employees-list__item {
+		width: 43%;
+
+		&:nth-child(3n + 1) {
+			padding-left: 6.49%;
+
+			&:before {
+				display: block;
+			}
+		}
+
+		&:nth-child(3n) {
+			padding-right: 6.49%;
+		}
+
+		&:nth-child(2n + 1) {
+			padding-left: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		&:nth-child(2n) {
+			padding-right: 0;
+		}
+	}
+}

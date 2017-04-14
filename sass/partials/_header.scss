@@ -1,0 +1,163 @@
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+	height: 437px;
+	background: #FFE680;
+	background: url(../img/h_bg.jpg) center 0; 
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -276px;
+	width: 553px;
+	height: 405px;
+	background: url(../img/logo.png) no-repeat;
+	background-size: 100% auto;
+}
+
+@media all and (max-width: 1235px) {
+	.logo {
+		margin-left: -231.84px;
+		width: 464.52px;
+		height: 340.2px;
+		top: 20px;
+	}
+}
+
+.logo__link {
+	display: block;
+	height: 100%;
+}
+
+.header-address{
+	position: absolute;
+	left: 24px;
+	top: 300px;
+	color: #e3e2e2;
+	font-family: $elp_bold;
+	font-size: 15px;
+	line-height: 1.54;
+	padding: 0;
+	margin: 0;
+}
+
+.header-phone{
+	font-family: $elp_bold;
+	position: absolute;
+	right: 24px;
+	top: 288px;
+	font-size: 24px;
+	line-height: 1.24;
+	color: #e3e2e2;
+	padding: 0;
+	margin: 0;
+}
+
+.header-phone__call{
+	font-family: $elp_reg;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #e3e2e2;
+	text-decoration: none;
+	border-bottom: 1px dotted #e3e2e2;
+
+	&:hover{
+		border-bottom: none;
+	}
+}
+
+.header-nav{
+	position: absolute;
+	top: 407px;
+	left: 24px;
+	right: 24px;
+	padding: 0;
+	@include linear-gradient(#9a5a84, #7d4984);
+
+	&:before{
+		content: '';
+		position: absolute;
+		left: -18px;
+		top: 0;
+		width: 18px;
+		height: 59px;
+		background: url(../img/main_menu_corner.png) 0 0 no-repeat;
+	}
+
+	&:after{
+		content: '';
+		position: absolute;
+		right: -18px;
+		top: 0;
+		width: 18px;
+		height: 59px;
+		background: url(../img/main_menu_corner.png) -18px 0 no-repeat;
+	}
+}
+
+.main-menu{
+	display: table;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	font-family: $elp_bold;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main-menu__item{
+	position: relative;
+	display: table-cell;
+	height: 59px;
+	line-height: 60px;
+	
+	&:after{
+		content: '';
+		position: absolute;
+		left: -1px;
+		top: 8px;
+		width: 2px;
+		height: 43px;
+		background: url(../img/main_menu_sep.png) 0 0 no-repeat;
+	}
+
+	&:first-child:after{
+		display: none;
+	}
+
+	&.active{
+		.main-menu__link{
+			@include linear-gradient(#84436e, #633668);
+		}
+
+		&:before{
+			content: '';
+			position: absolute;
+			left: 50%;
+			margin-left: -18px;
+			bottom: -9px;
+			height: 9px;
+			width: 26px;
+			background: url(../img/sprite.png) -26px 0 no-repeat;
+		}
+	}
+}
+
+.main-menu__link{
+	position: relative;
+	display: block;
+	height: 59px;
+	padding: 0;
+	color: #fff;
+	text-decoration: none;
+	z-index: 1;
+	
+	&:hover{
+		@include linear-gradient(#84436e, #633668);
+	}
+}

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'elektra_light_pro_regular';
+    src: url('../fonts/etelkalight-webfont.eot');
+    src: url('../fonts/etelkalight-webfont.eot?#iefix') format('embedded-opentype'),
+    		url('../fonts/etelkalight-webfont.svg#elektra_light_proregular') format('svg'),
+         url('../fonts/etelkalight-webfont.woff') format('woff'),
+         url('../fonts/etelkalight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'elektra_light_pro_bold';
+    src: url('../fonts/elektralightbold-webfont.eot');
+    src: url('../fonts/elektralightbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektralightbold-webfont.svg#elektra_light_probold') format('svg'),
+         url('../fonts/elektralightbold-webfont.woff') format('woff'),
+         url('../fonts/elektralightbold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'elektra_light_proitalic';
+    src: url('elektralightitalic-webfont.eot');
+    src: url('elektralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('elektralightitalic-webfont.woff') format('woff'),
+         url('elektralightitalic-webfont.ttf') format('truetype'),
+         url('elektralightitalic-webfont.svg#elektra_light_proitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
